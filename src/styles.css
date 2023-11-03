@@ -1,3 +1,4 @@
+/* Add application styles & imports to this file! */
 html,
 body {
   padding: 0;
@@ -36,4 +37,5 @@ h2 {
   color: #fff;
   font-size: 10pt;
   border: none;
+  text-decoration: none;
 }
