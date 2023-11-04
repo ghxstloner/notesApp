@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { NOTES } from 'src/notes';
 
 @Component({
@@ -9,7 +9,7 @@ import { NOTES } from 'src/notes';
   standalone: true,
   templateUrl: './add-note.component.html',
   styleUrls: ['./add-note.component.css'],
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterModule],
 })
 export class AddNoteComponent {
   router = inject(Router);

@@ -1,9 +1,9 @@
-<div id="note-container">
-    <span class="note-title">note.title</span>
-    <span class="note-id">ID: note.id</span>
-    <span class="note-text">note.text</span>
-  </div>
-  <nav>
-    <button routerLink="">Back to List</button>
-  </nav>
-  
+<div *ngIf="note" id="note-container">
+  <span class="note-title">{{ note.title }} </span>
+  <span class="note-id">ID: {{ note.id }} </span>
+  <span class="note-text">{{ note.text }}</span>
+</div>
+<nav>
+  <button class="backNotes" routerLink="">Back to List</button>
+  <button class="delete" (click)="deleteNote()">Delete Note</button>
+</nav>
